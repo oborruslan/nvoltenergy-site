@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NVoltenerergy SRL | Servicii profesionale de instalații electrice</title>
+    <meta name="description" content="NVoltenerergy SRL oferă servicii profesionale de instalații electrice pentru locuințe, spații comerciale și obiective industriale.">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script defer src="./assets/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Sari la conținut</a>
+
+    <header class="site-header" data-header>
+      <div class="header-inner">
+        <a class="brand" href="#hero" aria-label="NVoltenerergy SRL">
+          <img src="./assets/logo-nvoltenergy.png" alt="NVoltenerergy SRL">
+        </a>
+
+        <nav class="desktop-nav" aria-label="Navigare principală">
+          <a href="#about" data-i18n="nav.about">DESPRE</a>
+          <a href="#services" data-i18n="nav.services">SERVICII</a>
+          <a href="#projects" data-i18n="nav.projects">LUCRĂRI</a>
+          <a href="#prices" data-i18n="nav.prices">PREȚURI</a>
+          <a href="#contact" data-i18n="nav.contacts">CONTACTE</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switch" aria-label="Alege limba">
+            <button class="lang-btn is-active" type="button" data-lang="ro">RO</button>
+            <button class="lang-btn" type="button" data-lang="ru">RU</button>
+          </div>
+          <button class="btn btn-primary btn-small" type="button" data-open-modal="lead" data-i18n="cta.consult">
+            CONSULTANȚĂ
+          </button>
+          <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-expanded="false" data-menu-toggle>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" aria-label="Navigare mobilă" data-mobile-nav>
+        <a href="#about" data-i18n="nav.about">DESPRE</a>
+        <a href="#services" data-i18n="nav.services">SERVICII</a>
+        <a href="#projects" data-i18n="nav.projects">LUCRĂRI</a>
+        <a href="#prices" data-i18n="nav.prices">PREȚURI</a>
+        <a href="#contact" data-i18n="nav.contacts">CONTACTE</a>
+        <button class="btn btn-primary" type="button" data-open-modal="lead" data-i18n="cta.consult">CONSULTANȚĂ</button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" data-i18n="hero.eyebrow">servicii de instalații</p>
+            <h1 data-i18n="hero.title">ELECTRICE LA CHEIE PENTRU CASE, AFACERI ȘI HALE INDUSTRIALE</h1>
+            <ul class="hero-points" data-hero-points></ul>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+37360000000" data-i18n="cta.call">APELAȚI</a>
+              <button class="btn btn-outline" type="button" data-open-modal="lead" data-i18n="cta.consult">
+                CONSULTANȚĂ
+              </button>
+            </div>
+            <div class="social-row" aria-label="Social media">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+          <div class="hero-brand reveal delay-1" aria-hidden="true">
+            <img src="./assets/logo-nvoltenergy.png" alt="">
+            <div class="energy-meter">
+              <span data-i18n="hero.meterLabel">stare proiect</span>
+              <strong data-i18n="hero.meterValue">audit + deviz + montaj</strong>
+              <div class="meter-bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container split-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="about.eyebrow">despre noi</p>
+            <h2 data-i18n="about.title">NVoltenerergy SRL</h2>
+          </div>
+          <div class="about-copy reveal delay-1">
+            <p data-i18n="about.p1">
+              NVoltenerergy SRL este o companie specializată în servicii profesionale de instalații electrice și soluții tehnice pentru clădiri rezidențiale, comerciale și industriale.
+            </p>
+            <div class="expandable" data-expandable>
+              <p data-i18n="about.p2">
+                Oferim servicii complete, de la proiectare și execuție până la întreținere, modernizare și intervenții rapide pentru instalații electrice.
+              </p>
+              <p data-i18n="about.mission">
+                Misiunea NVoltenerergy SRL este să ofere lucrări executate la standarde înalte de calitate, cu accent pe siguranță, profesionalism și fiabilitate.
+              </p>
+            </div>
+            <button class="text-button" type="button" data-expand-trigger data-i18n="about.more">CITEȘTE MAI MULT</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section why-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="why.eyebrow">serviciile noastre</p>
+            <h2 data-i18n="why.title">De ce ne aleg clienții</h2>
+          </div>
+          <div class="benefit-grid" data-benefits></div>
+        </div>
+      </section>
+
+      <section class="calculation-band" id="calculation">
+        <div class="container calculation-inner">
+          <div class="calculation-copy reveal">
+            <p class="eyebrow" data-i18n="calc.eyebrow">soluții moderne</p>
+            <h2 data-i18n="calc.title">Solicită un calcul pentru proiectul tău electric</h2>
+            <p data-i18n="calc.text">
+              Trimite câteva detalii despre obiect, iar echipa pregătește o estimare inițială pentru materiale, lucrări și termene.
+            </p>
+            <button class="btn btn-primary" type="button" data-open-modal="lead" data-i18n="calc.button">SOLICITĂ CALCUL</button>
+          </div>
+          <div class="calculation-visual reveal delay-1" aria-hidden="true">
+            <div class="circuit-frame">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process-section">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow" data-i18n="process.eyebrow">cum lucrăm</p>
+            <h2 data-i18n="process.title">De la prima discuție până la punerea în funcțiune</h2>
+          </div>
+          <div class="process-grid" data-process></div>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="services.eyebrow">serviciile noastre</p>
+            <h2 data-i18n="services.title">Lucrări electrice complete</h2>
+            <p data-i18n="services.subtitle">
+              Servicii adaptate pentru locuințe, spații comerciale, hale industriale și clădiri publice.
+            </p>
+          </div>
+          <div class="service-grid" data-services></div>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="projects.eyebrow">lucrările noastre</p>
+            <h2 data-i18n="projects.title">Galerie temporară pentru proiecte</h2>
+            <p data-i18n="projects.subtitle">
+              Imaginile sunt abstracte și pot fi înlocuite ulterior cu fotografii reale din șantier.
+            </p>
+          </div>
+          <div class="slider-shell reveal delay-1">
+            <button class="slider-btn" type="button" data-slide-prev aria-label="Înapoi">‹</button>
+            <div class="project-slider" data-project-slider></div>
+            <button class="slider-btn" type="button" data-slide-next aria-label="Înainte">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section prices-section" id="prices">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow" data-i18n="prices.eyebrow">prețuri</p>
+            <h2 data-i18n="prices.title">Prețuri orientative pentru început</h2>
+            <p data-i18n="prices.subtitle">
+              Valorile sunt exemple inițiale și pot fi ajustate după auditul obiectului, materiale și complexitate.
+            </p>
+          </div>
+          <div class="price-controls reveal" role="tablist" aria-label="Categorii prețuri">
+            <button class="price-filter is-active" type="button" data-price-filter="all" data-i18n="prices.all">Toate</button>
+            <button class="price-filter" type="button" data-price-filter="interior" data-i18n="prices.interior">Interior</button>
+            <button class="price-filter" type="button" data-price-filter="exterior" data-i18n="prices.exterior">Exterior</button>
+          </div>
+          <div class="price-grid" data-prices></div>
+        </div>
+      </section>
+
+      <section class="section reviews-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="reviews.eyebrow">recenzii</p>
+            <h2 data-i18n="reviews.title">Ce spun clienții demo</h2>
+          </div>
+          <div class="review-grid" data-reviews></div>
+          <div class="center-actions reveal">
+            <button class="btn btn-outline" type="button" data-open-modal="review" data-i18n="reviews.button">Lăsați o recenzie</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-layout">
+          <div class="contact-copy reveal">
+            <p class="eyebrow" data-i18n="contact.eyebrow">contacte</p>
+            <h2 data-i18n="contact.title">Suntem gata să discutăm proiectul</h2>
+            <p data-i18n="contact.subtitle">
+              Datele de mai jos sunt demo și pot fi înlocuite cu informațiile oficiale ale companiei.
+            </p>
+            <ul class="contact-list">
+              <li><span data-i18n="contact.scheduleLabel">Grafic</span><strong data-i18n="contact.schedule">Ln-Vn, 09:00-18:00</strong></li>
+              <li><span data-i18n="contact.addressLabel">Adresă</span><strong data-i18n="contact.address">mun. Chișinău, str. Exemplu 10</strong></li>
+              <li><span data-i18n="contact.phoneLabel">Telefon</span><strong><a href="tel:+37360000000">+373 60 000 000</a></strong></li>
+              <li><span>Email</span><strong><a href="mailto:contact@nvoltenergy.md">contact@nvoltenergy.md</a></strong></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal delay-1" data-form>
+            <label>
+              <span data-i18n="form.name">Nume</span>
+              <input type="text" name="name" autocomplete="name">
+            </label>
+            <label>
+              <span data-i18n="form.phone">Telefon de contact *</span>
+              <input type="tel" name="phone" required autocomplete="tel">
+            </label>
+            <label>
+              <span data-i18n="form.message">Mesaj</span>
+              <textarea name="message" rows="4"></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit" data-i18n="form.sendMessage">Trimite mesajul</button>
+            <p class="form-status" data-form-status></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img src="./assets/logo-nvoltenergy.png" alt="NVoltenerergy SRL">
+        <p data-i18n="footer.text">Abordare completă pentru instalații electrice: proiectare, execuție și mentenanță.</p>
+        <span data-i18n="footer.copy">© 2026 NVoltenerergy SRL. Toate drepturile sunt rezervate.</span>
+      </div>
+    </footer>
+
+    <div class="modal" aria-hidden="true" data-modal>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-close-modal aria-label="Închide">×</button>
+        <div class="modal-content" data-modal-content="lead">
+          <p class="eyebrow" data-i18n="modal.eyebrow">cerere rapidă</p>
+          <h2 id="modal-title" data-i18n="modal.title">Suntem gata să discutăm proiectul</h2>
+          <p data-i18n="modal.text">Lăsați o solicitare și managerul nostru vă va contacta.</p>
+          <form class="modal-form" data-form>
+            <label>
+              <span data-i18n="form.name">Nume</span>
+              <input type="text" name="name" autocomplete="name">
+            </label>
+            <label>
+              <span data-i18n="form.phone">Telefon de contact *</span>
+              <input type="tel" name="phone" required autocomplete="tel">
+            </label>
+            <label>
+              <span data-i18n="form.service">Serviciu</span>
+              <select name="service" data-service-select></select>
+            </label>
+            <label>
+              <span data-i18n="form.message">Mesaj</span>
+              <textarea name="message" rows="3"></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit" data-i18n="form.send">Trimite</button>
+            <p class="form-status" data-form-status></p>
+          </form>
+        </div>
+        <div class="modal-content" data-modal-content="review" hidden>
+          <p class="eyebrow" data-i18n="reviewModal.eyebrow">recenzie</p>
+          <h2 data-i18n="reviewModal.title">Lăsați o recenzie</h2>
+          <form class="modal-form" data-form>
+            <label>
+              <span data-i18n="form.name">Nume</span>
+              <input type="text" name="name">
+            </label>
+            <label>
+              <span data-i18n="reviewModal.comment">Comentariu</span>
+              <textarea name="comment" rows="4" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit" data-i18n="reviewModal.send">Trimite recenzia</button>
+            <p class="form-status" data-form-status></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
