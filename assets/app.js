@@ -815,7 +815,17 @@ function bindDynamicButtons() {
   });
 }
 
+function setMobileMenu(open) {
+  const menuToggle = qs("[data-menu-toggle]");
+  const mobileNav = qs("[data-mobile-nav]");
+  if (!menuToggle || !mobileNav) return;
+  menuToggle.setAttribute("aria-expanded", String(open));
+  mobileNav.classList.toggle("is-open", open);
+  document.body.classList.toggle("menu-open", open);
+}
+
 function openModal(type = "lead", selectedService = "") {
+  setMobileMenu(false);
   const modal = qs("[data-modal]");
   qsa("[data-modal-content]").forEach((content) => {
     content.hidden = content.dataset.modalContent !== type;
@@ -877,7 +887,10 @@ function bindStaticEvents() {
 
   qsa("[data-close-modal]").forEach((item) => item.addEventListener("click", closeModal));
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeModal();
+    if (event.key === "Escape") {
+      closeModal();
+      setMobileMenu(false);
+    }
   });
 
   const header = qs("[data-header]");
@@ -886,17 +899,13 @@ function bindStaticEvents() {
   window.addEventListener("scroll", updateHeader, { passive: true });
 
   const menuToggle = qs("[data-menu-toggle]");
-  const mobileNav = qs("[data-mobile-nav]");
   menuToggle.addEventListener("click", () => {
     const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
-    menuToggle.setAttribute("aria-expanded", String(!isOpen));
-    mobileNav.classList.toggle("is-open", !isOpen);
+    setMobileMenu(!isOpen);
   });
-  qsa(".mobile-nav a").forEach((link) => {
-    link.addEventListener("click", () => {
-      menuToggle.setAttribute("aria-expanded", "false");
-      mobileNav.classList.remove("is-open");
-    });
+  qsa(".mobile-nav a").forEach((link) => link.addEventListener("click", () => setMobileMenu(false)));
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1050) setMobileMenu(false);
   });
 
   const expandable = qs("[data-expandable]");
