@@ -196,34 +196,88 @@ const DATA = {
       ["Stații EV", "Imagine temporară pentru conectare și infrastructură de încărcare."],
     ],
     prices: {
-      interior: {
-        title: "Lucrări de interior",
+      montaj: {
+        title: "Montaj instalații electrice",
         rows: [
-          ["Instalare priză / întrerupător", "80 lei"],
+          ["Montare priză simplă/dublă", "150 – 300 lei"],
+          ["Montare întrerupător", "150 – 300 lei"],
+          ["Montare corp iluminat", "200 – 500 lei"],
+          ["Tablou electric (montare/înlocuire)", "800 – 2000 lei"],
+          ["Cablare electrică", "20 – 50 lei / metru"],
+          ["Instalație completă apartament", "150 – 300 lei / m²"],
+        ],
+      },
+      reparatii: {
+        title: "Reparații electrice",
+        rows: [
+          ["Diagnostic problemă electrică", "150 – 300 lei"],
+          ["Reparație scurtcircuit", "300 – 800 lei"],
+          ["Înlocuire priză arsă", "150 – 250 lei"],
+          ["Siguranță automată (schimbare)", "150 – 400 lei"],
+          ["Remediere cablu defect", "200 – 600 lei"],
+        ],
+      },
+      mentenanta: {
+        title: "Întreținere și mentenanță",
+        rows: [
+          ["Verificare instalație completă", "300 – 600 lei"],
+          ["Revizie anuală", "500 – 1000 lei"],
+          ["Optimizare consum electric", "300 – 700 lei"],
+        ],
+      },
+      urgente: {
+        title: "Intervenții urgente",
+        rows: [
+          ["Deplasare + intervenție rapidă", "300 – 600 lei"],
+          ["Intervenție noapte / urgență", "+50% tarif"],
+        ],
+      },
+      manoperaMaxima: {
+        title: "Manoperă instalații - tarif maxim",
+        rows: [
+          ["Priză standard (220V)", "180 MDL"],
+          ["Întrerupător (simplu/dublu/cap-scară)", "170 MDL"],
+          ["Priză Internet (RJ45) / TV / Audio", "220 MDL"],
+          ["Lustră / Lampă complexă", "500 MDL"],
+          ["Bandă LED (montaj profil + bandă) / ml", "150 MDL"],
+          ["Montaj Spot LED / Panou LED", "130 MDL"],
+          ["Senzor mișcare / Termostat Smart", "450 MDL"],
+        ],
+      },
+      siguranta: {
+        title: "Tablouri și sisteme de siguranță",
+        rows: [
+          ["Tablou electric (asamblare complexă)", "2 500 MDL"],
+          ["Tablou Internet / Rack Media", "1 200 MDL"],
+          ["Sistem împământare (priză pământ completă)", "5 000 MDL"],
+          ["Instalare interfon / videointerfon", "1 800 MDL"],
+          ["Montaj automatizare poartă / barieră", "3 500 MDL"],
+        ],
+      },
+      infrastructura: {
+        title: "Infrastructură și trasee - condiții dificile",
+        rows: [
+          ["Săpare șanț per metru (beton monolit)", "90 MDL"],
+          ["Săpare șanț per metru (cărămidă/BCA)", "50 MDL"],
+          ["Pozare cablu în tub copex / ml", "55 MDL"],
+          ["Carotare gaură doză (beton armat)", "100 MDL"],
+          ["Montare și fixare doză aparat", "45 MDL"],
+          ["Instalare tablou general (încastrat în beton)", "1 500 MDL"],
+        ],
+      },
+      pastrate: {
+        title: "Alte lucrări păstrate din pagina inițială",
+        rows: [
           ["Înlocuire priză / întrerupător", "120 lei"],
           ["Montaj doză de aparat (beton)", "70 lei"],
           ["Montaj doză de aparat (gips-carton)", "50 lei"],
           ["Montaj doză de derivație", "100 lei"],
-          ["Montaj spot încastrat", "120 lei"],
-          ["Montaj corp de iluminat plafonier", "150 lei"],
-          ["Montaj lustră standard", "70 lei"],
           ["Montaj bandă LED fără profil", "la cerere"],
-          ["Montaj bandă LED în profil", "100 lei"],
-          ["Pozare cablu în șanț (beton/cărămidă)", "22 lei"],
-          ["Pozare cablu în tub flexibil (copex)", "30 lei"],
           ["Pozare cablu pe gips-carton", "22 lei"],
           ["Șanțuire pereți pentru cablu", "la cerere"],
-          ["Montaj tablou electric", "400-650 lei"],
           ["Asamblare tablou (1 modul)", "100 lei"],
           ["Conectare linie la tablou", "150 lei"],
           ["Diagnosticare rețea electrică", "la cerere"],
-          ["Identificare defecțiune", "1000-2000 lei"],
-          ["Deplasare specialist (Chișinău)", "300 lei"],
-        ],
-      },
-      exterior: {
-        title: "Lucrări de exterior",
-        rows: [
           ["Pozare cablu pe fațadă", "50 lei"],
           ["Pozare cablu în țeavă (exterior)", "70 lei"],
           ["Pozare cablu în pământ", "80 lei"],
@@ -232,7 +286,6 @@ const DATA = {
           ["Montaj corp de iluminat exterior", "250 lei"],
           ["Montaj corp de iluminat fațadă", "la cerere"],
           ["Montaj intrare electrică în casă", "1500 lei"],
-          ["Montaj priză de pământ (împământare)", "3000 lei"],
           ["Conectare stabilizator / UPS", "400-650 lei"],
           ["Instalare tablou exterior", "500 lei"],
         ],
@@ -442,34 +495,88 @@ const DATA = {
       ["EV-станции", "Временное изображение для инфраструктуры зарядки."],
     ],
     prices: {
-      interior: {
-        title: "Внутренние работы",
+      montaj: {
+        title: "Монтаж электрики",
         rows: [
-          ["Установка розетки / выключателя", "80 лей"],
+          ["Монтаж простой/двойной розетки", "150 – 300 лей"],
+          ["Монтаж выключателя", "150 – 300 лей"],
+          ["Монтаж светильника", "200 – 500 лей"],
+          ["Электрический щит (монтаж/замена)", "800 – 2000 лей"],
+          ["Электрическая кабельная разводка", "20 – 50 лей / метр"],
+          ["Полная электрика квартиры", "150 – 300 лей / м²"],
+        ],
+      },
+      reparatii: {
+        title: "Электрический ремонт",
+        rows: [
+          ["Диагностика электрической проблемы", "150 – 300 лей"],
+          ["Ремонт короткого замыкания", "300 – 800 лей"],
+          ["Замена сгоревшей розетки", "150 – 250 лей"],
+          ["Автоматический выключатель (замена)", "150 – 400 лей"],
+          ["Устранение повреждения кабеля", "200 – 600 лей"],
+        ],
+      },
+      mentenanta: {
+        title: "Обслуживание и профилактика",
+        rows: [
+          ["Полная проверка установки", "300 – 600 лей"],
+          ["Годовая ревизия", "500 – 1000 лей"],
+          ["Оптимизация потребления электроэнергии", "300 – 700 лей"],
+        ],
+      },
+      urgente: {
+        title: "Срочные выезды",
+        rows: [
+          ["Выезд + быстрая интервенция", "300 – 600 лей"],
+          ["Ночной / срочный выезд", "+50% тариф"],
+        ],
+      },
+      manoperaMaxima: {
+        title: "Максимальный тариф: монтаж",
+        rows: [
+          ["Стандартная розетка (220V)", "180 MDL"],
+          ["Выключатель (одинарный/двойной/проходной)", "170 MDL"],
+          ["Интернет-розетка (RJ45) / TV / Audio", "220 MDL"],
+          ["Люстра / сложный светильник", "500 MDL"],
+          ["LED-лента (профиль + лента) / м.п.", "150 MDL"],
+          ["Монтаж LED-спота / LED-панели", "130 MDL"],
+          ["Датчик движения / Smart-термостат", "450 MDL"],
+        ],
+      },
+      siguranta: {
+        title: "Щиты и системы безопасности",
+        rows: [
+          ["Электрический щит (сложная сборка)", "2 500 MDL"],
+          ["Интернет-щит / Media Rack", "1 200 MDL"],
+          ["Система заземления (полный контур)", "5 000 MDL"],
+          ["Установка домофона / видеодомофона", "1 800 MDL"],
+          ["Монтаж автоматики ворот / шлагбаума", "3 500 MDL"],
+        ],
+      },
+      infrastructura: {
+        title: "Инфраструктура и трассы - сложные условия",
+        rows: [
+          ["Копка траншеи за метр (монолитный бетон)", "90 MDL"],
+          ["Копка траншеи за метр (кирпич/BCA)", "50 MDL"],
+          ["Прокладка кабеля в copex-трубе / м.п.", "55 MDL"],
+          ["Сверление отверстия под коробку (армированный бетон)", "100 MDL"],
+          ["Монтаж и фиксация монтажной коробки", "45 MDL"],
+          ["Установка общего щита (встроенный в бетон)", "1 500 MDL"],
+        ],
+      },
+      pastrate: {
+        title: "Позиции, сохраненные из начальной версии",
+        rows: [
           ["Замена розетки / выключателя", "120 лей"],
           ["Монтаж монтажной коробки (бетон)", "70 лей"],
           ["Монтаж монтажной коробки (гипсокартон)", "50 лей"],
           ["Монтаж распределительной коробки", "100 лей"],
-          ["Монтаж встроенного спота", "120 лей"],
-          ["Монтаж потолочного светильника", "150 лей"],
-          ["Монтаж стандартной люстры", "70 лей"],
           ["Монтаж LED-ленты без профиля", "по запросу"],
-          ["Монтаж LED-ленты в профиль", "100 лей"],
-          ["Прокладка кабеля в штробе (бетон/кирпич)", "22 лея"],
-          ["Прокладка кабеля в гибкой трубе", "30 лей"],
           ["Прокладка кабеля по гипсокартону", "22 лея"],
           ["Штробление стен под кабель", "по запросу"],
-          ["Монтаж электрического щита", "400-650 лей"],
           ["Сборка щита (1 модуль)", "100 лей"],
           ["Подключение линии к щиту", "150 лей"],
           ["Диагностика электрической сети", "по запросу"],
-          ["Поиск неисправности", "1000-2000 лей"],
-          ["Выезд специалиста (Кишинев)", "300 лей"],
-        ],
-      },
-      exterior: {
-        title: "Наружные работы",
-        rows: [
           ["Прокладка кабеля по фасаду", "50 лей"],
           ["Прокладка кабеля в трубе (наружно)", "70 лей"],
           ["Прокладка кабеля в земле", "80 лей"],
@@ -478,7 +585,6 @@ const DATA = {
           ["Монтаж наружного светильника", "250 лей"],
           ["Монтаж фасадного светильника", "по запросу"],
           ["Монтаж электрического ввода в дом", "1500 лей"],
-          ["Монтаж контура заземления", "3000 лей"],
           ["Подключение стабилизатора / UPS", "400-650 лей"],
           ["Установка наружного щита", "500 лей"],
         ],
@@ -590,6 +696,25 @@ function renderProjects() {
   });
 }
 
+function renderPriceControls() {
+  const controls = qs(".price-controls");
+  const prices = DATA[currentLang].prices;
+  if (!prices[currentPriceFilter]) currentPriceFilter = "all";
+  controls.innerHTML = "";
+
+  const allButton = createEl("button", "price-filter", getText("prices.all"));
+  allButton.type = "button";
+  allButton.dataset.priceFilter = "all";
+  controls.append(allButton);
+
+  Object.entries(prices).forEach(([category, panel]) => {
+    const button = createEl("button", "price-filter", panel.title);
+    button.type = "button";
+    button.dataset.priceFilter = category;
+    controls.append(button);
+  });
+}
+
 function renderPrices() {
   const grid = qs("[data-prices]");
   grid.innerHTML = "";
@@ -644,6 +769,7 @@ function renderAll() {
   renderProcess();
   renderServices();
   renderProjects();
+  renderPriceControls();
   renderPrices();
   renderReviews();
   populateServiceSelect();
@@ -741,11 +867,12 @@ function bindStaticEvents() {
     });
   });
 
-  qsa("[data-price-filter]").forEach((button) => {
-    button.addEventListener("click", () => {
+  qs(".price-controls").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-price-filter]");
+    if (button) {
       currentPriceFilter = button.dataset.priceFilter;
       applyPriceFilter();
-    });
+    }
   });
 
   qsa("[data-close-modal]").forEach((item) => item.addEventListener("click", closeModal));
